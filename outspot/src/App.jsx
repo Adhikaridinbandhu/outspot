@@ -5,17 +5,23 @@ import AddNewPlace from "./places/pages/AddNewPlace";
 import UserDetail from "./users/pages/UserDetailsPage";
 import PlaceDetails from "./places/pages/PlaceDetails";
 import DataAuthentication from "./users/pages/Authenticate";
+import UpdatePlace from "./places/pages/UpdatePlace";
+import HeaderNavigation from "./shared/HeaderNavigation";
 
 function App() {
   return (
     <>
       <Router>
+        <div className="app-header">
+          <HeaderNavigation />
+        </div>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/authenticate" element={<DataAuthentication />} />
           <Route path="/places/new" element={<AddNewPlace />} />
           <Route path="/users/:id" element={<UserDetail />} />
-          <Route path="/places/:id" element={<PlaceDetails />} />
+          <Route path="/place/:id" element={<PlaceDetails />} />
+          <Route path="/places/:id" element={<UpdatePlace />} />
         </Routes>
       </Router>
     </>
