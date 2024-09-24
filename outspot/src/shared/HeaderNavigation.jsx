@@ -20,7 +20,7 @@ const HeaderNavigation = () => {
             <Link to="places/new">ADD PLACE</Link>
           </li>
           <li id="authenticate">
-            <Link to="/auth">MY PLACES</Link>
+            <Link to="/auth">AUTHENTICATION</Link>
           </li>
           <li id="logout">
             <button id="logout-button">LOGOUT</button>
