@@ -1,7 +1,8 @@
 import React, { useState, useContext } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import AuthContext from "./AuthContext"; // Import your AuthContext
+// import AuthContext from "./AuthContext"; // Import your AuthContext
+import AuthContext from "../../AuthContext/AuthContext";
 
 const UserAuthentication = () => {
   const {
